@@ -8,28 +8,47 @@
     font-family: 'PERPETUA TITLING MT','Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   }
 
+
   /* header y nav general (los id son por colores) */
-.header-nav{
-  /* debo hacer que el header quede fijo mientras scrolleamos */
-}
 
-  #index{
+  /*header general, excepto los colores*/
+  
+  header{
     display: flex;
-    background-color: #b7bff3;
-    /* width: auto; */
-    height: 20vh;
+    height: 120px;
     padding: 1em;
+  }
 
-    /* position: fixed; */
-    
-    
- 
+  footer{
+      bottom: 0;
+      width: 100%;
+      padding:3em;
+      font-size: 0.7rem;
+      text-align: end;
+  }
+
+  #index, #index-footer{
+    background-color: #b7bff3;
 }
-#index-img{
+  #programa, #programa-footer{
+      background-color: #c8b0f4 ;
+}
+  #inscribirse, #inscribirse-footer{
+      background-color: #a9d2e3 ;
+}
+  /*nav general, excepto los colores*/
+  nav{
+    
+    display: flex;
+    justify-content: flex-start;
+    align-self: center;
+    
+}
+ header img{
     justify-content: flex-start;
     margin-right: 2em;
-/* media query para min-width: pantalla 730px; */
 }
+
 .header-text {
     display: flex;
     flex-direction: column;
@@ -54,19 +73,20 @@
 .webtags{
     visibility: hidden;
 }
-nav{
-    
-    display: flex;
-    justify-content: flex-start;
-    align-self: center;
-    
-}
+
 #index-nav {
     background-color: #b7bff3 ;
 }
+#programa-nav{
+    background-color: #c8b0f4 ;
+}
+#inscribirse-nav{
+    background-color: #a9d2e3;
+}
+/* los links y sus transiciones en el nav hover*/
 #index-nav a{
     background-color: #b7bff3 ;
-    transition: 0s background-color, font-size;
+    transition: 0s background-color, font-size, text-decoration;
     text-decoration: none;
     justify-content: space-between;
     text-transform: uppercase;
@@ -77,12 +97,88 @@ nav{
     padding-left:8em;
 }
 #index-nav a:hover{
-    background-color:#c4f1ed ;
+    background-color:#d6dcff ;
     font-size: 1.05em;
+    text-decoration: underline;
+    transition-delay: 0.09s;
+}
+#programa-nav a{
+    background-color: #c8b0f4 ;
+    transition: 0s background-color, font-size, text-decoration;
+    text-decoration: none;
+    justify-content: space-between;
+    text-transform: uppercase;
+    color: #000000;
+    padding-top: 2em;
+    padding-right: 8em;
+    padding-bottom: 2em;
+    padding-left:8em;
+}
+#programa-nav a:hover{
+    background-color:#e3d4ff;
+    font-size: 1.05em;
+    text-decoration: underline;
+    transition-delay: 0.09s;
+}
+#inscribirse-nav a{
+    background-color: #a9d2e3 ;
+    transition: 0s background-color, font-size, text-decoration;
+    text-decoration: none;
+    justify-content: space-between;
+    text-transform: uppercase;
+    color: #000000;
+    padding-top: 2em;
+    padding-right: 8em;
+    padding-bottom: 2em;
+    padding-left:8em;
+}
+#inscribirse-nav a:hover{
+    background-color:#c8eaf8;
+    font-size: 1.05em;
+    text-decoration: underline;
     transition-delay: 0.09s;
 }
 
+/* fin de nav y header */
+
 /* main */
-section{
-    height: 70vh;
+main{
+    min-height: 75vh;
+    padding: 2em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+
+section{
+    /* height: 50vh; */
+
+}
+
+
+
+
+
+/* fin de MQ desktop */
+
+/* ajustes MQ para tablet y mobile */
+@media screen and (min-width: 780px) and (max-width: 1023px){
+    .header-nav{
+        display: inline-block;
+    }
+    header{
+        /* height: 150px; */
+        
+      }
+} 
+
+@media screen and (max-width: 779px){
+    .header-nav{
+        display: inline-block;
+    }
+    header img{
+        /* width: ; */
+    }
+    header{
+        height: 100px;
+        
+      }
+} 
