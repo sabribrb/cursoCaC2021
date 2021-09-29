@@ -1,0 +1,88 @@
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  body{
+      background-color: ivory;
+    font-size: 1rem;
+    font-family: 'PERPETUA TITLING MT','Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+
+  /* header y nav general (los id son por colores) */
+.header-nav{
+  /* debo hacer que el header quede fijo mientras scrolleamos */
+}
+
+  #index{
+    display: flex;
+    background-color: #b7bff3;
+    /* width: auto; */
+    height: 20vh;
+    padding: 1em;
+
+    /* position: fixed; */
+    
+    
+ 
+}
+#index-img{
+    justify-content: flex-start;
+    margin-right: 2em;
+/* media query para min-width: pantalla 730px; */
+}
+.header-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* column-gap: 2px; */
+       
+}
+
+.title {
+    font-family: 'Rage', 'lucida sans';
+    /* font-weight: bolder; */
+    font-size: 3rem;
+
+    margin: 0;
+}
+.subtitle{
+    font-family: 'baskerville old face', 'lucida sans';
+    margin: 0;
+    padding-bottom: 1em;
+    text-transform: uppercase;
+}
+.webtags{
+    visibility: hidden;
+}
+nav{
+    
+    display: flex;
+    justify-content: flex-start;
+    align-self: center;
+    
+}
+#index-nav {
+    background-color: #b7bff3 ;
+}
+#index-nav a{
+    background-color: #b7bff3 ;
+    transition: 0s background-color, font-size;
+    text-decoration: none;
+    justify-content: space-between;
+    text-transform: uppercase;
+    color: #000000;
+    padding-top: 2em;
+    padding-right: 8em;
+    padding-bottom: 2em;
+    padding-left:8em;
+}
+#index-nav a:hover{
+    background-color:#c4f1ed ;
+    font-size: 1.05em;
+    transition-delay: 0.09s;
+}
+
+/* main */
+section{
+    height: 70vh;
+}
