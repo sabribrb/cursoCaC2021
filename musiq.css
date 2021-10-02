@@ -4,6 +4,7 @@
   }
   body{
       background-color: ivory;
+      margin: 0;
     font-size: 1rem;
     font-family: 'PERPETUA TITLING MT','Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   }
@@ -61,7 +62,7 @@
     font-family: 'Rage', 'lucida sans';
     /* font-weight: bolder; */
     font-size: 3rem;
-
+    opacity: 0.65;
     margin: 0;
 }
 .subtitle{
@@ -69,6 +70,8 @@
     margin: 0;
     padding-bottom: 1em;
     text-transform: uppercase;
+    opacity: 0.75;
+
 }
 .webtags{
     visibility: hidden;
@@ -144,41 +147,123 @@
 /* main */
 main{
     min-height: 75vh;
-    padding: 2em;
+    /* padding: 2em; */
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-section{
-    /* height: 50vh; */
+/* index main */
+.carousel{
+    padding: 5em;
+}
+
+.index-section{
+    background-color:thistle;
+    border: 2em;
+    padding: 1.5em;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    
+}
+.index-article{
+    background-color: tomato;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    row-gap: 2em;
+    
+}
+.index-article article{
+ background-color: turquoise;
+ /* width: auto; */
+ /* display: flex; */
+}
+
+/* programa main */
+#parallax{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    background-image: url(/imagenes/parallax2.jpg);
+    min-height: 450px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.75;
+    
+}
+#parallax-title{
+   
+    font-size: 1.5rem;
+    padding: 3em;    
+}
+
+.programa-section{
+    padding: 4em;
+}
+.carreras-down{
+    padding: 2em;
+}
+.carreras-down summary{
+    font-size: 1.2rem;
 
 }
 
-
+/* inscribirse main */
+#red-box{
+    background-color:tomato;
+    font-weight:400;
+    display: flex;
+    align-items: baseline;
+    padding: 1.5em;
+    border: 0.2em;
+    border-color: black;
+    border-style:solid;
+    margin: 2em;
+}
+#red-box i{
+    padding-right: 1em;
+    padding-left: 0.5em;
+    align-self: center;
+}
+#ubicacion-mapa{
+    padding: 2em;
+}
 
 
 
 /* fin de MQ desktop */
 
 /* ajustes MQ para tablet y mobile */
-@media screen and (min-width: 780px) and (max-width: 1023px){
+@media screen and (min-width: 600px) and (max-width: 1023px){
+    body{
+        display: inline-block;
+    }
+    
+    
     .header-nav{
         display: inline-block;
     }
-    header{
-        /* height: 150px; */
-        
-      }
+    #parallax{
+        min-height: 400px;
+
+    }
+    
 } 
 
-@media screen and (max-width: 779px){
+@media screen and (max-width: 600px){
+    body{
+        display: inline-block;
+    }
+    
     .header-nav{
         display: inline-block;
     }
-    header img{
-        /* width: ; */
-    }
+    
     header{
         height: 100px;
         
-      }
+    }
+      
 } 
