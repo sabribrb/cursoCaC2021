@@ -76,6 +76,10 @@
 .webtags{
     visibility: hidden;
 }
+/* nav desplegable con JS, hidden en desktop y tablet */
+.topnav .bar-icon {
+    display: none;
+}
 
 #index-nav {
     background-color: #b7bff3 ;
@@ -86,6 +90,8 @@
 #inscribirse-nav{
     background-color: #a9d2e3;
 }
+
+
 /* los links y sus transiciones en el nav hover*/
 #index-nav a{
     background-color: #b7bff3 ;
@@ -242,10 +248,10 @@ main{
     body{
         display: inline-block;
     }
-    
-    
-    .header-nav{
-        display: inline-block;
+    nav{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
     }
     #parallax{
         min-height: 400px;
@@ -255,17 +261,40 @@ main{
 } 
 
 @media screen and (max-width: 600px){
-    body{
-        display: inline-block;
-    }
-    
-    .header-nav{
-        display: inline-block;
-    }
     
     header{
         height: 100px;
         
     }
+    /* nav desplegable  */
+    nav{
+        display: flex;
+        justify-content: flex-end;
+    }
+    .topnav a {display: none;} /*escondo los links menos el icon*/
+    .topnav a.bar-icon {
+        float: right;
+    display: block;
+    }
+    /* la class .responsive la agrega la funcion desplegarNav() */
+    .topnav.responsive {
+        position: relative;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .topnav.responsive a.bar-icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
+
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+      }
+
+    
       
 } 
