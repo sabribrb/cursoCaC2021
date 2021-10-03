@@ -248,7 +248,11 @@ main{
     body{
         display: inline-block;
     }
-        /* acomodar el nav para que quede una opcion debajo de la otra */
+    nav{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
     #parallax{
         min-height: 400px;
 
@@ -284,7 +288,7 @@ main{
         right: 0;
         top: 0;
       }
-      
+
     .topnav.responsive a {
         float: none;
         display: block;
