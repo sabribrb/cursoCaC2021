@@ -235,8 +235,51 @@ main{
     padding-left: 0.5em;
     align-self: center;
 }
+
+form{
+    background-color: whitesmoke;
+    font-family: inherit;
+    padding: 3em;
+    margin: 2em 10em 2em 10em;
+    border: 5px solid black;
+}
+form h1{
+    text-align: center;
+}
+form input[type=text] {
+    padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.form-btn{
+    font-size: 1.5rem;
+    text-align: center;
+}
+#email-input{
+    width: 50%;
+}
+.form-btn input{
+    background-color: #a9d2e3;
+    font-size: 1rem;
+    padding-right: 5em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-left: 5em;
+}
 #ubicacion-mapa{
+    background-color:lavender;
     padding: 2em;
+    margin: 2em;
+    text-align: center;
+    border: 5px solid black;
+}
+
+
+#google-map{
+    width: 600px;
+    height: 400px;
 }
 
 
@@ -245,9 +288,9 @@ main{
 
 /* ajustes MQ para tablet y mobile */
 @media screen and (min-width: 600px) and (max-width: 1023px){
-    body{
+    /* body{
         display: inline-block;
-    }
+    } */
     nav{
         display: flex;
         flex-wrap: wrap;
@@ -256,6 +299,13 @@ main{
     #parallax{
         min-height: 400px;
 
+    }
+    #email-input{
+        width: 70%;
+      }
+    #google-map{
+        width: 500px;
+        height: 350px;
     }
     
 } 
@@ -295,6 +345,19 @@ main{
         text-align: left;
       }
 
+      form{
+          margin: 2em 4em 2em 4em;
+      }
+      form input[type=text] {
+          width: 70%;
+      }
+      #email-input{
+        width: 70%;
+      }
+      #google-map{
+        width: 300px;
+        height: 200px;
+    }
     
       
 } 
