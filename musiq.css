@@ -1,0 +1,363 @@
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  body{
+      background-color: ivory;
+      margin: 0;
+    font-size: 1rem;
+    font-family: 'PERPETUA TITLING MT','Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+
+
+  /* header y nav general (los id son por colores) */
+
+  /*header general, excepto los colores*/
+  
+  header{
+    display: flex;
+    height: 120px;
+    padding: 1em;
+  }
+
+  footer{
+      bottom: 0;
+      width: 100%;
+      padding:3em;
+      font-size: 0.7rem;
+      text-align: end;
+  }
+
+  #index, #index-footer{
+    background-color: #b7bff3;
+}
+  #programa, #programa-footer{
+      background-color: #c8b0f4 ;
+}
+  #inscribirse, #inscribirse-footer{
+      background-color: #a9d2e3 ;
+}
+  /*nav general, excepto los colores*/
+  nav{
+    
+    display: flex;
+    justify-content: flex-start;
+    align-self: center;
+    
+}
+ header img{
+    justify-content: flex-start;
+    margin-right: 2em;
+}
+
+.header-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* column-gap: 2px; */
+       
+}
+
+.title {
+    font-family: 'Rage', 'lucida sans';
+    /* font-weight: bolder; */
+    font-size: 3rem;
+    opacity: 0.65;
+    margin: 0;
+}
+.subtitle{
+    font-family: 'baskerville old face', 'lucida sans';
+    margin: 0;
+    padding-bottom: 1em;
+    text-transform: uppercase;
+    opacity: 0.75;
+
+}
+.webtags{
+    visibility: hidden;
+}
+/* nav desplegable con JS, hidden en desktop y tablet */
+.topnav .bar-icon {
+    display: none;
+}
+
+#index-nav {
+    background-color: #b7bff3 ;
+}
+#programa-nav{
+    background-color: #c8b0f4 ;
+}
+#inscribirse-nav{
+    background-color: #a9d2e3;
+}
+
+
+/* los links y sus transiciones en el nav hover*/
+#index-nav a{
+    background-color: #b7bff3 ;
+    transition: 0s background-color, font-size, text-decoration;
+    text-decoration: none;
+    justify-content: space-between;
+    text-transform: uppercase;
+    color: #000000;
+    padding-top: 2em;
+    padding-right: 8em;
+    padding-bottom: 2em;
+    padding-left:8em;
+}
+#index-nav a:hover{
+    background-color:#d6dcff ;
+    font-size: 1.05em;
+    text-decoration: underline;
+    transition-delay: 0.09s;
+}
+#programa-nav a{
+    background-color: #c8b0f4 ;
+    transition: 0s background-color, font-size, text-decoration;
+    text-decoration: none;
+    justify-content: space-between;
+    text-transform: uppercase;
+    color: #000000;
+    padding-top: 2em;
+    padding-right: 8em;
+    padding-bottom: 2em;
+    padding-left:8em;
+}
+#programa-nav a:hover{
+    background-color:#e3d4ff;
+    font-size: 1.05em;
+    text-decoration: underline;
+    transition-delay: 0.09s;
+}
+#inscribirse-nav a{
+    background-color: #a9d2e3 ;
+    transition: 0s background-color, font-size, text-decoration;
+    text-decoration: none;
+    justify-content: space-between;
+    text-transform: uppercase;
+    color: #000000;
+    padding-top: 2em;
+    padding-right: 8em;
+    padding-bottom: 2em;
+    padding-left:8em;
+}
+#inscribirse-nav a:hover{
+    background-color:#c8eaf8;
+    font-size: 1.05em;
+    text-decoration: underline;
+    transition-delay: 0.09s;
+}
+
+/* fin de nav y header */
+
+/* main */
+main{
+    min-height: 75vh;
+    /* padding: 2em; */
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* index main */
+.carousel{
+    padding: 5em;
+}
+
+.index-section{
+    background-color:thistle;
+    border: 2em;
+    padding: 1.5em;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    
+}
+.index-article{
+    background-color: tomato;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    row-gap: 2em;
+    
+}
+.index-article article{
+ background-color: turquoise;
+ /* width: auto; */
+ /* display: flex; */
+}
+
+/* programa main */
+#parallax{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    background-image: url(/imagenes/parallax2.jpg);
+    min-height: 450px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.75;
+    border-bottom: 0.2em solid black;
+    border-top:0.2em solid black;
+    
+}
+#parallax-title{
+   
+    font-size: 1.5rem;
+    padding: 3em;    
+}
+
+.programa-section{
+    padding: 4em;
+}
+.carreras-down{
+    padding: 2em;
+}
+.carreras-down summary{
+    font-size: 1.2rem;
+
+}
+
+/* inscribirse main */
+#red-box{
+    background-color:tomato;
+    font-weight:400;
+    display: flex;
+    align-items: baseline;
+    padding: 1.5em;
+    border: 0.2em;
+    border-color: black;
+    border-style:solid;
+    margin: 2em;
+}
+#red-box i{
+    padding-right: 1em;
+    padding-left: 0.5em;
+    align-self: center;
+}
+
+form{
+    background-color: whitesmoke;
+    font-family: inherit;
+    padding: 3em;
+    margin: 2em 10em 2em 10em;
+    border: 5px solid black;
+}
+form h1{
+    text-align: center;
+}
+form input[type=text] {
+    padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.form-btn{
+    font-size: 1.5rem;
+    text-align: center;
+}
+#email-input{
+    width: 50%;
+}
+.form-btn input{
+    background-color: #a9d2e3;
+    font-size: 1rem;
+    padding-right: 5em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-left: 5em;
+}
+#ubicacion-mapa{
+    background-color:lavender;
+    padding: 2em;
+    margin: 2em;
+    text-align: center;
+    border: 5px solid black;
+}
+
+
+#google-map{
+    width: 600px;
+    height: 400px;
+}
+
+
+
+/* fin de MQ desktop */
+
+/* ajustes MQ para tablet y mobile */
+@media screen and (min-width: 600px) and (max-width: 1023px){
+    /* body{
+        display: inline-block;
+    } */
+    nav{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    #parallax{
+        min-height: 400px;
+
+    }
+    #email-input{
+        width: 70%;
+      }
+    #google-map{
+        width: 500px;
+        height: 350px;
+    }
+    
+} 
+
+@media screen and (max-width: 600px){
+    
+    header{
+        height: 100px;
+        
+    }
+    /* nav desplegable  */
+    nav{
+        display: flex;
+        justify-content: flex-end;
+    }
+    .topnav a {display: none;} /*escondo los links menos el icon*/
+    .topnav a.bar-icon {
+        float: right;
+    display: block;
+    }
+    /* la class .responsive la agrega la funcion desplegarNav() */
+    .topnav.responsive {
+        position: relative;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .topnav.responsive a.bar-icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
+
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+      }
+
+      form{
+          margin: 2em 4em 2em 4em;
+      }
+      form input[type=text] {
+          width: 70%;
+      }
+      #email-input{
+        width: 70%;
+      }
+      #google-map{
+        width: 300px;
+        height: 200px;
+    }
+    
+      
+} 

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="musiq.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="icon" type="image/png" href="/imagenes/favicon1.png">
+    <title>Lirio de Paz - Inscripción</title>
+
+</head>
+
+<body>
+    <div class="header-nav">
+        <header id="inscribirse">
+            <img id="inscribirse-img" src="/imagenes/logo/inscribirse.png" alt="lirio de paz">
+            <div class="header-text">
+                <p class="title">Lirio de paz</p>
+                <p class="subtitle">conservatorio de artes musicales </p>
+
+
+
+            </div>
+
+        </header>
+
+        <nav class="topnav" id="inscribirse-nav">
+            <a href="index.html"> inicio </a>
+            <a href="programa.html"> oferta académica </a>
+            <a href="inscribirse.html"> inscribirse </a>
+            <a href="javascript:void(0);" class="bar-icon" onclick="desplegarNavInscribirse()">
+                <i class="fa fa-bars"></i> </a>
+
+        </nav>
+    </div>
+
+    <main>
+
+        <div id="form-js">
+            <!-- tipo cuadradito rojo y carita triste -->
+
+            <div id="red-box">
+                <i class="far fa-times-circle fa-3x"></i>
+                <p>En estos momentos, el período de inscripción <u>se encuentra cerrado</u>, pero puede suscribirse para
+                    ser
+                    notificado cuando vuelva a estar abierto. Si lo desea, rellene el siguiente formulario:</p>
+            </div>
+
+            <form name="form1" action="destino.html">
+                <h1>Complete con sus datos <br></h1>
+                <label for="fname">Nombre:<br></label>
+                <input type="text">
+                <label for="lname"> <br> Apellido:<br></label>
+                <input type="text">
+                <label for="email"> <br> Correo electrónico:<br></label>
+                <input id="email-input" type="text"><br> <br>
+
+                <p>Marque las carreras de las cuales desea ser notificado/a: <br></p>
+                <input type="checkbox" name="carrera">
+                <label for="carrera1"> Profesorado de Producción Musical Didáctica </label> <br>
+                <input type="checkbox" name="carrera">
+                <label for="carrera2"> Profesorado de Música con orientación en Música Popular Argentina</label> <br>
+                <input type="checkbox" name="carrera">
+                <label for="carrera3"> Profesorado y Tecnicatura en Etnomusicología</label> <br>
+                <input type="checkbox" name="carrera">
+                <label for="carrera4"> Tecnicatura en Jazz</label> <br> <br>
+
+                <p>Marque una opción: <br></p>
+                <input type="radio" name="deseo"><label for="extra1"> Deseo recibir noticias de Lirio de Paz<br></label>
+                <input type="radio" name="deseo"><label for="extra1"> No deseo recibir noticias de Lirio de
+                    Paz<br></label>
+                <p>( Siempre será notificado de las <b>apertura de inscripciones</b> ) <br></p>
+
+                <div class="form-btn">
+                    <input type="submit" value="Suscribirse">
+                    <input type="reset" value="Cancelar">
+                    <p> No se preocupe, podrá cancelar su suscripción en cualquier momento desde su correo. </p>
+                </div>
+
+
+            </form>
+
+        </div>
+        <div id="ubicacion-mapa">
+            <h2> Cómo llegar al conservatorio</h2>
+            <p> El edificio del conservatorio se encuentra ubicado en Adolfo Alsina 1994, CABA.</p>
+            <iframe id="google-map" style="filter: invert(100%)"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d205.23121976081396!2d-58.39484854132571!3d-34.611759072158634!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccae7f7fc7bb7%3A0xddef9bcc4e62d5e8!2sAdolfo%20Alsina%201994%2C%20C1090AAD%20CABA!5e0!3m2!1ses!2sar!4v1632890480608!5m2!1ses!2sar"
+                style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+
+    </main>
+
+    <footer id="inscribirse-footer">
+        Desarrollado por Sabrina Barbiero - Comisión 2165
+    </footer>
+    <script src="main.js"></script>
+</body>
+
+</html>
