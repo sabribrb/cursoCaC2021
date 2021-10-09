@@ -50,24 +50,24 @@
                     notificado cuando vuelva a estar abierto. Si lo desea, rellene el siguiente formulario:</p>
             </div>
 
-            <form name="form1" action="destino.html">
+            <form name="form1" action="destino.html" onsubmit="return validacion();">
                 <h1>Complete con sus datos <br></h1>
-                <label for="fname">Nombre:<br></label>
-                <input type="text">
+                <label >Nombre:<br></label>
+                <input type="text" name="fname" > <label id="alert-name" class="alert-fr" ></label>
                 <label for="lname"> <br> Apellido:<br></label>
                 <input type="text">
                 <label for="email"> <br> Correo electrónico:<br></label>
-                <input id="email-input" type="text"><br> <br>
+                <input id="email-input" type="text"><br> <br> <label id="alert-mail" class="alert-fr" ></label>
 
                 <p>Marque las carreras de las cuales desea ser notificado/a: <br></p>
                 <input type="checkbox" name="carrera">
-                <label for="carrera1"> Profesorado de Producción Musical Didáctica </label> <br>
+                <label > Profesorado de Producción Musical Didáctica </label> <br>
                 <input type="checkbox" name="carrera">
-                <label for="carrera2"> Profesorado de Música con orientación en Música Popular Argentina</label> <br>
+                <label > Profesorado de Música con orientación en Música Popular Argentina</label> <br>
                 <input type="checkbox" name="carrera">
-                <label for="carrera3"> Profesorado y Tecnicatura en Etnomusicología</label> <br>
+                <label > Profesorado y Tecnicatura en Etnomusicología</label> <br>
                 <input type="checkbox" name="carrera">
-                <label for="carrera4"> Tecnicatura en Jazz</label> <br> <br>
+                <label> Tecnicatura en Jazz</label> <br> <br> <label id="alert-chk" class="alert-fr" ></label>
 
                 <p>Marque una opción: <br></p>
                 <input type="radio" name="deseo"><label for="extra1"> Deseo recibir noticias de Lirio de Paz<br></label>
@@ -87,8 +87,8 @@
         </div>
         <div id="ubicacion-mapa">
             <h2> Cómo llegar al conservatorio</h2>
-            <p> El edificio del conservatorio se encuentra ubicado en Adolfo Alsina 1994, CABA.</p>
-            <iframe id="google-map" style="filter: invert(100%)"
+            <p> El edificio del conservatorio se encuentra ubicado en Adolfo Alsina 1994, CABA. <br><br></p>
+            <iframe id="google-map"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d205.23121976081396!2d-58.39484854132571!3d-34.611759072158634!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccae7f7fc7bb7%3A0xddef9bcc4e62d5e8!2sAdolfo%20Alsina%201994%2C%20C1090AAD%20CABA!5e0!3m2!1ses!2sar!4v1632890480608!5m2!1ses!2sar"
                 style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         </div>

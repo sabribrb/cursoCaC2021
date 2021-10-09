@@ -170,19 +170,53 @@ main{
     flex-direction: column;
     text-align: center;
     
-}
-.index-article{
-    background-color: tomato;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    row-gap: 2em;
+    
     
 }
-.index-article article{
- background-color: turquoise;
- /* width: auto; */
- /* display: flex; */
+.index-articles{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  grid-gap: 32px;
+  grid-auto-flow:dense;
+  
+    
+    
+}
+.index-articles article{
+    padding: 0;
+    background-color:rgb(236, 208, 236);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+    border: 10px double black;
+}
+.index-articles article:hover{
+    /* transition-delay: ; */
+}
+
+.articles-txt{
+    padding: 1em;
+    text-align: left;
+    height: fit-content;
+   
+
+}
+.index-articles a{
+    color: black;
+     text-decoration: none;
+}
+.article-ttl{
+    display: inline-block;
+    text-align: center;
+    font-weight: 500;
+    padding-top: 1em;
+}
+.article-img{
+    height: 200px;
+    overflow: hidden;
+}
+
+.article-img img{
+    max-width:100%;
+
 }
 
 /* programa main */
@@ -238,6 +272,8 @@ main{
 
 form{
     background-color: whitesmoke;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+
     font-family: inherit;
     padding: 3em;
     margin: 2em 10em 2em 10em;
@@ -260,6 +296,9 @@ form input[type=text] {
 #email-input{
     width: 50%;
 }
+.alert-fr{
+    color: red;
+}
 .form-btn input{
     background-color: #a9d2e3;
     font-size: 1rem;
@@ -271,20 +310,21 @@ form input[type=text] {
 #ubicacion-mapa{
     background-color:lavender;
     padding: 2em;
-    margin: 2em;
+    margin:2em;
     text-align: center;
     border: 5px solid black;
 }
 
 
 #google-map{
-    width: 600px;
+    width: 900px;
     height: 400px;
 }
 
 
 
-/* fin de MQ desktop */
+
+/* fin de desktop */
 
 /* ajustes MQ para tablet y mobile */
 @media screen and (min-width: 600px) and (max-width: 1023px){
@@ -296,6 +336,7 @@ form input[type=text] {
         flex-wrap: wrap;
         flex-direction: column;
     }
+    
     #parallax{
         min-height: 400px;
 
@@ -303,10 +344,15 @@ form input[type=text] {
     #email-input{
         width: 70%;
       }
+    #ubicacion-mapa{
+        margin: auto;
+    width: fit-content;
+    }
     #google-map{
         width: 500px;
         height: 350px;
     }
+
     
 } 
 
@@ -345,8 +391,13 @@ form input[type=text] {
         text-align: left;
       }
 
+      #red-box{
+        margin: 0;
+    }
+
       form{
-          margin: 2em 4em 2em 4em;
+          margin: 2em 0em 2em 0em;
+          line-height: 200%;
       }
       form input[type=text] {
           width: 70%;
@@ -354,6 +405,10 @@ form input[type=text] {
       #email-input{
         width: 70%;
       }
+      #ubicacion-mapa{
+        margin: auto;
+    width: fit-content;
+    }
       #google-map{
         width: 300px;
         height: 200px;
@@ -361,3 +416,16 @@ form input[type=text] {
     
       
 } 
+@media screen and (max-width: 600px){
+    body{
+        font-size: 0.7rem;
+        
+    }
+    .programa-section{
+        padding-left: 1em;
+        padding-right: 1em;
+        line-height: 170%;
+    }
+    
+
+}
