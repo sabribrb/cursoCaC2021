@@ -48,6 +48,7 @@
  header img{
     justify-content: flex-start;
     margin-right: 2em;
+    width: 100px;
 }
 
 .header-text {
@@ -358,10 +359,11 @@ form input[type=text] {
 
 @media screen and (max-width: 600px){
     
-    header{
-        /* height: 100px; */
+    header img {
+        width: 100px;
         
     }
+
     /* nav desplegable  */
     nav{
         display: flex;
