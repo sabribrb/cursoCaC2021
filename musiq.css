@@ -1,6 +1,6 @@
 @font-face {
-    font-family: 'PERPETUA TITLING MT';
-    src: url('C:\Windows\Fonts\Perpetua Titling MT');
+    font-family: 'Rage1';
+    src: url('/fonts/RAGE1.TTF');
 }
 * {
     -webkit-box-sizing: border-box;
@@ -63,7 +63,7 @@
 }
 
 .title {
-    font-family: 'Rage', 'lucida sans';
+    font-family: 'Rage1', 'lucida sans';
     /* font-weight: bolder; */
     font-size: 3rem;
     opacity: 0.65;
