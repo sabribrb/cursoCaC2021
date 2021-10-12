@@ -16,7 +16,7 @@
   
   header{
     display: flex;
-    height: 120px;
+    /* height: 120px; */
     padding: 1em;
   }
 
@@ -359,7 +359,7 @@ form input[type=text] {
 @media screen and (max-width: 600px){
     
     header{
-        height: 100px;
+        /* height: 100px; */
         
     }
     /* nav desplegable  */
