@@ -50,10 +50,11 @@
                     notificado cuando vuelva a estar abierto. Si lo desea, rellene el siguiente formulario:</p>
             </div>
 
-            <form name="form1" action="destino.html" onsubmit="return validacion();">
+            <form name="form1" action="destino.html" onsubmit="return validacion()" >
                 <h1>Complete con sus datos <br></h1>
+                
                 <label >Nombre:<br></label>
-                <input type="text" name="fname" > <label id="alert-name" class="alert-fr" ></label>
+                <input type="text" name="fname" autofocus > <label id="alert-name" class="alert-fr" ></label>
                 <label for="lname"> <br> Apellido:<br></label>
                 <input type="text">
                 <label for="email"> <br> Correo electrónico:<br></label>
@@ -72,11 +73,12 @@
                 <p>Marque una opción: <br></p>
                 <input type="radio" name="deseo"><label for="extra1"> Deseo recibir noticias de Lirio de Paz<br></label>
                 <input type="radio" name="deseo"><label for="extra1"> No deseo recibir noticias de Lirio de
-                    Paz<br></label>
+                    Paz<br></label> 
+                    <br> <label id="alert-radio" class="alert-fr" ></label>
                 <p>( Siempre será notificado de las <b>apertura de inscripciones</b> ) <br></p>
 
                 <div class="form-btn">
-                    <input type="submit" value="Suscribirse">
+                    <input type="submit" value="Suscribirse" >
                     <input type="reset" value="Cancelar">
                     <p> No se preocupe, podrá cancelar su suscripción en cualquier momento desde su correo. </p>
                 </div>
