@@ -79,6 +79,8 @@
 }
 .webtags{
     visibility: hidden;
+    font-size: 0;
+    margin: 0;
 }
 /* nav desplegable con JS, hidden en desktop y tablet */
 .topnav .bar-icon {
